@@ -1,0 +1,48 @@
+BLOG MENGGUNAKAN LARAVEL 10
+React Laravel 10 Blog App
+
+
+dimulai 20-06-24
+telah sampai vi 6 13:31
+dimulai -06-24
+
+
+
+*untuk menghapus table
+php artisan migrate:rollback
+
+
+
+
+install framework
+Laravel 10
+
+
+
+
+#CLI
+- php artisan make:migration create_blogs_table
+
+membuat tabel di database
+- php artisan migrate
+
+
+-php artisan make:controller BlogController
+-php artisan make:model Blog
+
+-php artisan make:migration create_temp_images_table
+
+-php artisan make:model TempImage  
+
+-php artisan make:controller TempImageController
+
+#postman
+localhost:8000/api/blogs
+localhost:8000/api/save-temp-image
+
+{
+    "title" : "Dummy title",
+    "author" : "Hari Santoso"
+    "shortDesc" : "dummy short description"
+    "author" : "dummy description"
+}
