@@ -37,6 +37,9 @@ membuat tabel di database
 -php artisan make:controller TempImageController
 
 #postman
+http://127.0.0.1:8000
+
+
 localhost:8000/api/blogs
 localhost:8000/api/save-temp-image
 
