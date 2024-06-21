@@ -7,13 +7,13 @@ https://react-bootstrap.netlify.app/
 https://www.npmjs.com/package/react-router-dom
 https://icons.getbootstrap.com/
 https://www.npmjs.com/package/react-simple-wysiwyg
+https://react-hook-form.com/
+https://www.npmjs.com/package/react-toastify
 
-https://www.postman.com/
 
 
 menggunakan:
-https://react-hook-form.com/
-https://www.npmjs.com/package/react-toastify
+https://www.postman.com/
 
 
 *CLI
@@ -30,10 +30,8 @@ Peringaran installasi
 *npm WARN deprecated @humanwhocodes/object-schema@2.0.3: Use @eslint/object-schema instead
 
 - npm i react-simple-wysiwyg
-
-
 - npm install react-hook-form
-
+- npm i react-toastify
 
 
 install extensions vscode

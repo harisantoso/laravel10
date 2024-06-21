@@ -22,7 +22,7 @@ class BlogController extends Controller
     public function store(Request $request)
     {
         $validator = Validator::make($request->all(), [
-            'title' => 'required|min:10',
+            'title' => 'required|min:5',
             'author' => 'required|min:3'
         ]);
 
