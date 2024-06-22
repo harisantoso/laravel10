@@ -3,7 +3,7 @@ React Laravel 10 Blog App
 
 
 dimulai 20-06-24
-telah sampai vi 6 13:31
+telah sampai vi 6
 dimulai -06-24
 
 install framework
@@ -24,15 +24,20 @@ php artisan migrate:rollback
 membuat tabel di database
 - php artisan migrate
 
+
 -php artisan make:controller BlogController
 
+
 -php artisan make:model Blog
-=====================================
+
+
 -php artisan make:migration create_temp_images_table
+
 
 -php artisan make:model TempImage  
 
 -php artisan make:controller TempImageController
+=====================================
 
 #postman
 http://127.0.0.1:8000
@@ -42,7 +47,11 @@ localhost:8000/api/blogs
 localhost:8000/api/save-temp-image
 
 
-
+*ERROR
+- saat validasi title tidak sesuai tetap berhasil,
+  tp tidak menyimpan di database.
+- validasi gambar error saat input type gambar webp,
+  berhasil saat dipilih dan tidak tersimpan saat di save.
 
 
 
