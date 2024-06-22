@@ -3,7 +3,7 @@ React Laravel 10 Blog App
 
 
 dimulai 20-06-24
-telah sampai vi 8
+telah sampai vi 9
 dimulai -06-24
 
 install framework

@@ -16,7 +16,7 @@ const BlogCard = ({ blog }) => {
           <h4 className="h5">{blog.title}</h4>
           <p>{blog.shortDesc}</p>
           <div className="d-flex justify-content-between">
-            <a href="#" className="btn btn-dark">
+            <a href={`/blog/${blog.id}`} className="btn btn-dark">
               Details
             </a>
             <a href="#" className="text-dark">

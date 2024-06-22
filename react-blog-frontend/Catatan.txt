@@ -41,3 +41,4 @@ install extensions vscode
 
 Menjalankan program
 npm run dev
+sho

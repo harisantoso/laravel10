@@ -22,8 +22,23 @@ class BlogController extends Controller
     }
 
     // this method will return a single blog
-    public function show()
+    public function show($id)
     {
+        $blog = Blog::find($id);
+
+        if ($blog == null) {
+            return response()->json([
+                'status' => false,
+                'message' => 'blog not found',
+            ]);
+        }
+
+        $blog['date'] = \Carbon\Carbon::parse($blog->created_at)->format('d M, Y');
+
+        return response()->json([
+            'status' => true,
+            'data' => $blog
+        ]);
     }
 
     // this method will store a blog

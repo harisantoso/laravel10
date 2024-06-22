@@ -97,7 +97,7 @@ const CreateBlog = () => {
               <label className="form-label">Description</label>
               <Editor
                 value={html}
-                containerProps={{ style: { height: "400px" } }}
+                containerProps={{ style: { height: "600px" } }}
                 onChange={onChange}
               />
             </div>
