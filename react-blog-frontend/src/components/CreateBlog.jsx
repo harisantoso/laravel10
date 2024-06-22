@@ -5,7 +5,7 @@ import { toast } from "react-toastify";
 import { useNavigate } from "react-router-dom";
 
 const CreateBlog = () => {
-  const [html, setHtml] = useState();
+  const [html, setHtml] = useState("");
   const [imageId, setImageId] = useState(); //beda
 
   const navigate = useNavigate();
