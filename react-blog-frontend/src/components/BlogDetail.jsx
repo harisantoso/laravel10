@@ -5,15 +5,14 @@ const BlogDetail = () => {
   const [blog, setBlog] = useState([]);
   const params = useParams();
 
-  const fetchBlogs = async () => {
-    // console.log(params.id);
+  const fetchBlog = async () => {
     const res = await fetch("http://127.0.0.1:8000/api/blogs/" + params.id);
     const result = await res.json();
     setBlog(result.data);
   };
 
   useEffect(() => {
-    fetchBlogs();
+    fetchBlog();
   }, []);
 
   return (
@@ -33,7 +32,7 @@ const BlogDetail = () => {
 
           {blog.image && (
             <img
-              className="w-100"
+              className="w-50"
               src={`http://127.0.0.1:8000/uploads/blogs/${blog.image}`}
             />
           )}

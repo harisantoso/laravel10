@@ -3,7 +3,7 @@ React Laravel 10 Blog App
 
 
 dimulai 20-06-24
-telah sampai vi 9
+telah sampai vi 10
 dimulai -06-24
 
 install framework
@@ -48,7 +48,7 @@ localhost:8000/api/save-temp-image
 - saat validasi title tidak sesuai tetap berhasil,
   tp tidak menyimpan di database.
 - validasi gambar error saat input type gambar webp,
-  berhasil saat dipilih dan tidak tersimpan saat di save.
+  berhasil saat dipilih dan tidak tersimpan didatabase saat di save.
 
 
 
