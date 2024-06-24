@@ -1,5 +1,5 @@
 dimulai 20-06-24
-telah sampai vi 8
+selesai 24-06-24
 
 Insatl repositori
 https://vitejs.dev/

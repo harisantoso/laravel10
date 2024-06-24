@@ -10,8 +10,6 @@ install framework
 Laravel 10
 
 
-
-
 *untuk menghapus table
 php artisan migrate:rollback
 
@@ -50,6 +48,8 @@ localhost:8000/api/save-temp-image
 - validasi gambar error saat input type gambar webp,
   berhasil saat dipilih dan tidak tersimpan didatabase saat di save.
 
+*cara kerja save gambar 
+- mengganti gambar dan menyimpan tetapi tidak pada template
 
 
 {

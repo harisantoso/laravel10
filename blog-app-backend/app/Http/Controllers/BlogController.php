@@ -148,7 +148,26 @@ class BlogController extends Controller
     }
 
     // this method will delete a blog
-    public function destroy()
+    public function destroy($id)
     {
+        $blog = Blog::find($id);
+
+        if ($blog == null) {
+            return response()->json([
+                'status' => false,
+                'message' => 'blog not found',
+            ]);
+        }
+
+        // delete blog image first
+        File::delete(public_path('uploads/blogs/' . $blog->image));
+
+        // delete blog from DB
+        $blog->delete();
+
+        return response()->json([
+            'status' => true,
+            'message' => 'blog deleted successfully'
+        ]);
     }
 }
