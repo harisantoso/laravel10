@@ -8,9 +8,11 @@ const BlogCard = ({ blog, blogs, setBlogs }) => {
       : `https://placehold.co/600x400`;
   };
 
-  const deleteBlog = (id) => {
+  // jika tidak pakai async
+  const deleteBlog = async (id) => {
     if (confirm("are you sure you want fo delete?")) {
-      const res = fetch("http://127.0.0.1:8000/api/blogs/" + id, {
+      // jika tgiidak pakai await
+      const res = await fetch("http://127.0.0.1:8000/api/blogs/" + id, {
         method: "DELETE",
       });
 
